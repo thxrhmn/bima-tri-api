@@ -1,7 +1,5 @@
 # Bima TRI API
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/thxrhmn/thxrhmn-bimatri-api)](https://goreportcard.com/report/github.com/thxrhmn/thxrhmn-bimatri-api)
-
 This API provides an interface to interact with the Bima TRI service.
 
 ## Table of Contents
@@ -36,7 +34,7 @@ This API provides an interface to interact with the Bima TRI service.
 ## Swagger Documentation
 The API is fully documented using Swagger.  Access the interactive documentation after starting the server:
 
-URL: http://thxrhmn.cloud/swagger/index.html
+URL: http://bima.thxrhmn.cloud/swagger/index.html
 
 ## Contributing
 Contributions are welcome! Please feel free to submit issues, pull requests, or suggestions.

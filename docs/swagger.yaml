@@ -1,0 +1,752 @@
+basePath: /
+definitions:
+  dto.AllRequest:
+    properties:
+      accessToken:
+        type: string
+      callPlan:
+        type: string
+      language:
+        type: string
+      msisdn:
+        type: string
+      secretKey:
+        type: string
+      subscriberType:
+        type: string
+    type: object
+  dto.LoginResponse:
+    properties:
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+  dto.LoginWithOtpErrorResponse:
+    properties:
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+  dto.LoginWithOtpResponse:
+    properties:
+      accessToken:
+        type: string
+      appsflyerMsisdn:
+        type: string
+      balance:
+        type: string
+      callPlan:
+        type: string
+      creditLimit:
+        type: string
+      firstTime:
+        type: boolean
+      language:
+        type: string
+      msisdn:
+        type: string
+      profileColor:
+        type: string
+      profileTime:
+        type: integer
+      secretKey:
+        type: string
+      status:
+        type: boolean
+      subscriberType:
+        type: string
+      xlocation: {}
+    type: object
+  dto.ProfileErrorResponse:
+    properties:
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+  dto.ProfileRequest:
+    properties:
+      accessToken:
+        type: string
+      callPlan:
+        type: string
+      language:
+        type: string
+      msisdn:
+        type: string
+      secretKey:
+        type: string
+      subscriberType:
+        type: string
+    type: object
+  dto.ProfileResponse:
+    properties:
+      code:
+        type: integer
+      data:
+        properties:
+          activePackages: {}
+          balance:
+            type: string
+          balanceDetails:
+            properties:
+              balance:
+                properties:
+                  title:
+                    type: string
+                  value:
+                    type: string
+                type: object
+              balanceOffnet: {}
+              balanceOnAndOffNet:
+                properties:
+                  detail:
+                    properties:
+                      Masa Berlaku:
+                        type: string
+                      Sisa Pulsa:
+                        type: string
+                    type: object
+                  title:
+                    type: string
+                  value:
+                    type: string
+                type: object
+              balanceOnNet: {}
+            type: object
+          balanceOffNet:
+            type: string
+          balanceOnAndOffNet:
+            type: string
+          balanceOnNet:
+            type: string
+          balanceTotal:
+            type: string
+          balanceTrims:
+            type: string
+          birthDate: {}
+          bonstriDetail:
+            properties:
+              bonusPoint:
+                type: integer
+              loyaltyPoint:
+                type: integer
+              totalPoint:
+                type: integer
+              validityLoyaltyPoint:
+                type: integer
+            type: object
+          callPlan:
+            type: string
+          cashback:
+            type: string
+          creditLimit:
+            type: string
+          creditLimitHybrid:
+            type: string
+          customerSegmentation:
+            properties:
+              deeplink: {}
+              description:
+                type: string
+              segmentationName:
+                type: string
+              title:
+                type: string
+            type: object
+          dueDate:
+            type: string
+          dueDateHybrid:
+            type: string
+          dukcapilName:
+            type: string
+          dukcapilUrl:
+            type: string
+          email:
+            type: string
+          emailHybrid:
+            type: string
+          firstLogin:
+            type: string
+          lastLogin:
+            type: string
+          maxPullNotification:
+            type: integer
+          mgmReferralDetails:
+            properties:
+              countOfReferrals:
+                type: integer
+              referralCode:
+                type: string
+              tncURL:
+                type: string
+              totalPoints:
+                type: integer
+            type: object
+          msisdn:
+            type: string
+          packageList:
+            items:
+              properties:
+                detail:
+                  items:
+                    properties:
+                      validity:
+                        type: string
+                      value:
+                        type: string
+                      valueOriginal: {}
+                    type: object
+                  type: array
+                groupId:
+                  type: string
+                isMore:
+                  type: boolean
+                isProductBuy:
+                  type: boolean
+                isRenewable:
+                  type: boolean
+                isShareQuota:
+                  type: boolean
+                linkProductBuyType:
+                  type: string
+                linkProductBuyValue:
+                  type: string
+                name:
+                  type: string
+                productId: {}
+              type: object
+            type: array
+          packageProductGroupList:
+            items:
+              properties:
+                content:
+                  items:
+                    properties:
+                      allocated:
+                        type: string
+                      allocatedRaw:
+                        type: string
+                      bonusType:
+                        type: string
+                      consumed:
+                        type: string
+                      consumedRaw:
+                        type: string
+                      isShareable:
+                        type: boolean
+                      localQuota:
+                        type: boolean
+                      productId: {}
+                      remaining:
+                        type: string
+                      remainingRaw:
+                        type: string
+                      title:
+                        type: string
+                      validity:
+                        type: string
+                      validityRaw:
+                        type: string
+                    type: object
+                  type: array
+                currChildCount:
+                  type: integer
+                isShareable:
+                  type: boolean
+                isStoppable:
+                  type: boolean
+                isTransferable:
+                  type: boolean
+                listOfSharableQuota:
+                  items: {}
+                  type: array
+                maxChildCount:
+                  type: integer
+                name:
+                  type: string
+                productId: {}
+                shareQuota:
+                  items: {}
+                  type: array
+              type: object
+            type: array
+          packageProductList:
+            items: {}
+            type: array
+          profileColor:
+            type: string
+          profileHobby: {}
+          profileName:
+            type: string
+          profilePicture:
+            type: string
+          profileTime:
+            type: integer
+          status:
+            type: boolean
+          statusSubscription:
+            type: boolean
+          subscriberType:
+            type: string
+          sumOfBonuses:
+            properties:
+              Data:
+                type: string
+              SMS:
+                type: string
+              Voice:
+                type: string
+            type: object
+          validity:
+            type: string
+        type: object
+      message:
+        type: string
+      status:
+        type: boolean
+      title: {}
+    type: object
+  dto.PromoErrorResponse:
+    properties:
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+  dto.PromoResponse:
+    properties:
+      code: {}
+      data:
+        properties:
+          child: {}
+          color1:
+            type: string
+          color2:
+            type: string
+          color3:
+            type: string
+          flagType: {}
+          flagUrl: {}
+          id:
+            type: integer
+          id2:
+            type: integer
+          image:
+            type: string
+          isAutorotate: {}
+          isCard: {}
+          layoutId: {}
+          mainCategoryId:
+            type: integer
+          metadata: {}
+          moreId: {}
+          name:
+            type: string
+          productList:
+            items:
+              properties:
+                active:
+                  type: boolean
+                articleBody: {}
+                articleLayout: {}
+                articleTitle: {}
+                basePackage: {}
+                bonstriPoints: {}
+                buttonBuy:
+                  type: string
+                campaign:
+                  type: integer
+                categoryId: {}
+                customData: {}
+                customDataId: {}
+                customDataQuota: {}
+                deeplink: {}
+                downloadLink:
+                  type: string
+                endDateTime:
+                  type: string
+                flagType: {}
+                flagUrl: {}
+                gameProductCategory: {}
+                gamePurchaseType: {}
+                isActive:
+                  type: boolean
+                isArticle:
+                  type: boolean
+                isAutoRenewable:
+                  type: integer
+                isBanner:
+                  type: boolean
+                isDownloadLink:
+                  type: boolean
+                isGamePartner:
+                  type: boolean
+                isInappBrowser: {}
+                isInstallment: {}
+                isProductRedirection:
+                  type: boolean
+                isRedemption:
+                  type: boolean
+                isRedirectToLink:
+                  type: boolean
+                isRequireGameIdVerification:
+                  type: boolean
+                isRequireGameZoneIdVerification:
+                  type: boolean
+                isShareable:
+                  type: integer
+                isSquareBanner: {}
+                isTransferable:
+                  type: integer
+                labelDescription:
+                  type: string
+                labelDetails:
+                  type: string
+                labelHowTo:
+                  type: string
+                labelOtherInfo:
+                  type: string
+                labelPricing:
+                  type: string
+                metadata:
+                  properties:
+                    IMG_BANNER:
+                      type: string
+                    IMG_BANNER_BIG:
+                      type: string
+                    IMG_BREAKER:
+                      type: string
+                    IMG_BREAKER_BIG:
+                      type: string
+                    IMG_PRODUCT_PORTRAIT:
+                      type: string
+                    IMG_PRODUCT_PORTRAIT_BIG:
+                      type: string
+                    IMG_PRODUCT_SQUARE:
+                      type: string
+                    IMG_PRODUCT_SQUARE_BIG:
+                      type: string
+                    IMG_RFU:
+                      type: string
+                    IMG_RFU_BIG:
+                      type: string
+                    IMG_SMALL:
+                      type: string
+                    IMG_SMALL_BIG:
+                      type: string
+                  type: object
+                offerDetail: {}
+                parent:
+                  type: boolean
+                parentLayoutId: {}
+                partnerId: {}
+                paymentList:
+                  items:
+                    properties:
+                      methodCode:
+                        type: string
+                      methodName:
+                        type: string
+                      rest:
+                        type: boolean
+                    type: object
+                  type: array
+                paymentMatrix:
+                  items:
+                    type: integer
+                  type: array
+                productDescription:
+                  type: string
+                productDetails:
+                  type: object
+                productDetailsType:
+                  type: string
+                productHowTo:
+                  type: string
+                productId:
+                  type: string
+                productLayout: {}
+                productName:
+                  type: string
+                productOriginalPrice:
+                  type: string
+                productOtherInfo: {}
+                productPrice:
+                  type: string
+                productPricing:
+                  type: string
+                productRating:
+                  type: number
+                productRatingTotalUser:
+                  type: integer
+                productValidity: {}
+                redirectLink:
+                  type: string
+                startDateTime:
+                  type: string
+                subMenuCategoryId: {}
+                tagDetail: {}
+                vendorList:
+                  items:
+                    properties:
+                      priceList:
+                        items:
+                          properties:
+                            planName:
+                              type: string
+                            price:
+                              type: string
+                          type: object
+                        type: array
+                      vendorId:
+                        type: integer
+                      vendorName:
+                        type: string
+                    type: object
+                  type: array
+                zone: {}
+              type: object
+            type: array
+          promoActiveFlag:
+            type: boolean
+          promoEndDateTime:
+            type: string
+          promoStartDateTime:
+            type: string
+          promoType:
+            type: string
+          survey: {}
+          tagDetail: {}
+          teaserEndDateTime: {}
+          teaserImage: {}
+          teaserStartDateTime: {}
+          timePeriod: {}
+        type: object
+      message:
+        type: string
+      status:
+        type: boolean
+      title: {}
+    type: object
+  dto.TransactionErrorResponse:
+    properties:
+      message:
+        type: string
+      status:
+        type: boolean
+    type: object
+  dto.TransactionResponse:
+    properties:
+      code: {}
+      data:
+        items:
+          properties:
+            addon: {}
+            category:
+              type: string
+            dateReg:
+              type: string
+            icon:
+              type: string
+            isAddon:
+              type: boolean
+            name:
+              type: string
+            parentProductId:
+              type: string
+            price:
+              type: string
+            productId:
+              type: string
+            status:
+              type: string
+            target: {}
+            transactionId:
+              type: string
+          type: object
+        type: array
+      message:
+        type: string
+      status:
+        type: boolean
+      title: {}
+    type: object
+info:
+  contact:
+    email: support@google.com
+    name: API Support
+    url: https://www.google.com/contact
+  description: This is bima tri api
+  termsOfService: https://google.com/terms/
+  title: Bima TRI API
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      description: do ping
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Ping
+      tags:
+      - v1
+  /auth/login:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Login request OTP
+      parameters:
+      - description: MSISDN
+        in: formData
+        name: msisdn
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.LoginResponse'
+      summary: Login
+      tags:
+      - v1
+  /auth/login-otp:
+    post:
+      consumes:
+      - multipart/form-data
+      description: Login with OTP
+      parameters:
+      - description: MSISDN
+        in: formData
+        name: msisdn
+        required: true
+        type: string
+      - description: OTP
+        in: formData
+        name: otp
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/dto.LoginWithOtpResponse'
+        "400":
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/dto.LoginWithOtpErrorResponse'
+      summary: Login With OTP
+      tags:
+      - v1
+  /profile:
+    post:
+      consumes:
+      - application/json
+      description: Profile API endpoint to retrieve user profile information.
+      parameters:
+      - description: Profile Request
+        in: body
+        name: profileRequest
+        required: true
+        schema:
+          $ref: '#/definitions/dto.ProfileRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successfully retrieved profile information.
+          schema:
+            $ref: '#/definitions/dto.ProfileResponse'
+        "400":
+          description: Invalid request or authentication failure.
+          schema:
+            $ref: '#/definitions/dto.ProfileErrorResponse'
+      summary: Profile
+      tags:
+      - v1
+  /promo:
+    post:
+      consumes:
+      - application/json
+      description: Promo API endpoint to retrieve promo information.
+      parameters:
+      - description: Promo Request
+        in: body
+        name: promoRequest
+        required: true
+        schema:
+          $ref: '#/definitions/dto.AllRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successfully retrieved promo information.
+          schema:
+            $ref: '#/definitions/dto.PromoResponse'
+        "400":
+          description: Invalid request or authentication failure.
+          schema:
+            $ref: '#/definitions/dto.PromoErrorResponse'
+      summary: Promo
+      tags:
+      - v1
+  /transaction:
+    post:
+      consumes:
+      - application/json
+      description: Transaction API endpoint to retrieve transaction information.
+      parameters:
+      - default: PULSA
+        description: Transaction Category
+        enum:
+        - PULSA
+        - PAKET
+        - TRANSFER
+        - HIBURAN
+        - GAME
+        in: query
+        name: category
+        type: string
+      - default: ALL
+        description: Transaction Status
+        enum:
+        - ALL
+        - SUCCESS
+        - PENDING
+        - FAILED
+        in: query
+        name: status
+        type: string
+      - description: Transaction Request
+        in: body
+        name: transactionRequest
+        required: true
+        schema:
+          $ref: '#/definitions/dto.AllRequest'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Successfully retrieved transaction information.
+          schema:
+            $ref: '#/definitions/dto.TransactionResponse'
+        "400":
+          description: Invalid request or authentication failure.
+          schema:
+            $ref: '#/definitions/dto.TransactionErrorResponse'
+      summary: Transaction
+      tags:
+      - v1
+swagger: "2.0"
